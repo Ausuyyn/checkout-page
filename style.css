@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+/* Globals */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+    margin: auto;
+    width: 70%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Javascript */
+
+.opacity1 {
+    opacity: 1 !important;
+}
+
+/* Header */
+
+.title__container h1 {
+    color: #4E5150;
+    font-size: 36px;
+    line-height: 44px;
+    margin: 35px 0 35px;
+}
+
+/* Main */
+
+.main__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main cart */
+
+.main__cart {
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 535px;
+    justify-content: space-between;
+    order: 2;
+    width: 380px;
+}
+
+/* Cart products */
+
+.cart__products {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.cart__product {
+    display: flex;
+    gap: 20px;
+}
+
+.cart__product img {
+    border-radius: 15px;
+    width: 150px;
+}
+
+.cart__product div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product__title {
+    color: #4E5150;
+    font-size: 16px;
+}
+
+.product__price {
+    color: #F2994A;
+    font-size: 16px;
+}
+
+.product__price small {
+    color: #4E5150;
+    font-size: 12px;
+    padding-left: 10px;
+    text-decoration: line-through;
+}
+
+.product__amount {
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #828282;
+    color: #333333;
+    display: flex;
+    font-size: 16px;
+    height: 50px;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 130px;
+}
+
+.product__button {
+    align-items: center;
+    background-color: #E0E0E0;
+    border-radius: 4px;
+    border: 0;
+    color: #828282;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    font: inherit;
+    height: 20px;
+    justify-content: center;
+    line-height: normal;
+    overflow: visible;
+    width: 20px;
+}
+
+.product__button i {
+    color: #828282;
+}
+
+/* Cart total */
+
+.cart__total {
+    display: flex;
+    flex-direction: column;
+}
+
+.total__price {
+    border-top: 1px solid #BDBDBD;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.total__price h2 {
+    color: #333333;
+    font-size: 18px;
+}
+
+.total__price p {
+    color: #333333;
+    font-size: 14px;
+}
+
+/* Main: Contact */
+
+.main__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 450px;
+}
+
+.form__title {
+    color: #4F4F4F;
+    font-size: 18px;
+    margin: 15px 0 0;
+}
+
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__input label {
+    color: #4F4F4F;
+    font-size: 12px;
+}
+
+.form__input input {
+    border-radius: 12px;
+    border: 1px solid #828282;
+    color: #727171;
+    font-size: 16px;
+    height: 55px;
+    opacity: 1;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.form__input input::placeholder {
+    font-family: 'Montserrat', 'Font Awesome 5 Free', sans-serif;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.form__input input:focus {
+    outline: none;
+}
+
+.form__section {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.select__container select{
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #828282;
+    border: none;
+    color: #727171;
+    font-family: 'Montserrat', 'Font Awesome 5 Free', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 55px;
+    opacity: 0.6;
+    padding-left: 15px;
+    width: 100%;
+    width: 100%;
+}
+
+.select__container {
+    border-radius: 12px;
+    border: 1px solid #828282;
+}
+
+/* Form: checkbox */
+
+.form__checkbox input{
+    display: none;
+}
+
+.form__checkbox label {
+    color: #4F4F4F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 30px;
+    position: relative;
+}
+
+.form__checkbox label:before {
+    border-radius: 4px;
+    border: 1px solid #828282;
+    content: '';
+    height: 21px;
+    left: 0px;
+    position: absolute;
+    top: -3px;
+    transform: rotate(0deg);
+    transition: all .2s;
+    width: 21px;
+}
+
+.form__checkbox input:checked + label::before {
+    align-items: center;
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    content: '\f00c';
+    display: flex;
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    justify-content: flex-start;
+    transform: rotate(360deg);
+}
+
+/* Form: button */
+
+.form__button {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.form__button button{
+    background-color: #F2994A;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 50px;
+}
+
+/* Footer */
+
+.footer__container {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer__container h3 {
+    color: #BDBDBD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer__container a {
+    color: #BDBDBD;
+    text-decoration: underline;
+}
+
+/* Query */
+
+@media screen and (max-width: 1250px) {
+    body {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    body {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        width: 95%;
+    }
+
+    .title__container {
+        text-align: center;
+    }
+
+    .main__container {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .main__cart {
+        order: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main_container{
+        width: 100%;
+    }
+
+    .main__cart {
+        width: 100%;
+    }
+
+    .main__form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    body {
+        width: 99%;
+    }
+}
